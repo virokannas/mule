@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8420A86121E1868C00BDBA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420A86021E1868C00BDBA18 /* AppDelegate.swift */; };
+		8420A86321E1868F00BDBA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8420A86221E1868F00BDBA18 /* Assets.xcassets */; };
+		8420A86621E1868F00BDBA18 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8420A86421E1868F00BDBA18 /* MainMenu.xib */; };
+		8420A86F21E186E400BDBA18 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420A86E21E186E400BDBA18 /* Editor.swift */; };
+		8420A87221E18B9900BDBA18 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420A87121E18B9900BDBA18 /* SceneKit.framework */; };
+		8420A87421E18BA200BDBA18 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420A87321E18BA200BDBA18 /* ModelIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8420A85D21E1868C00BDBA18 /* mule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8420A86021E1868C00BDBA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8420A86221E1868F00BDBA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8420A86521E1868F00BDBA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8420A86721E1868F00BDBA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8420A86821E1868F00BDBA18 /* mule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mule.entitlements; sourceTree = "<group>"; };
+		8420A86E21E186E400BDBA18 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
+		8420A87121E18B9900BDBA18 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		8420A87321E18BA200BDBA18 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8420A85A21E1868C00BDBA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8420A87421E18BA200BDBA18 /* ModelIO.framework in Frameworks */,
+				8420A87221E18B9900BDBA18 /* SceneKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8420A85421E1868C00BDBA18 = {
+			isa = PBXGroup;
+			children = (
+				8420A85F21E1868C00BDBA18 /* mule */,
+				8420A85E21E1868C00BDBA18 /* Products */,
+				8420A87021E18B9900BDBA18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8420A85E21E1868C00BDBA18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8420A85D21E1868C00BDBA18 /* mule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8420A85F21E1868C00BDBA18 /* mule */ = {
+			isa = PBXGroup;
+			children = (
+				8420A86021E1868C00BDBA18 /* AppDelegate.swift */,
+				8420A86221E1868F00BDBA18 /* Assets.xcassets */,
+				8420A86421E1868F00BDBA18 /* MainMenu.xib */,
+				8420A86721E1868F00BDBA18 /* Info.plist */,
+				8420A86821E1868F00BDBA18 /* mule.entitlements */,
+				8420A86E21E186E400BDBA18 /* Editor.swift */,
+			);
+			path = mule;
+			sourceTree = "<group>";
+		};
+		8420A87021E18B9900BDBA18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8420A87321E18BA200BDBA18 /* ModelIO.framework */,
+				8420A87121E18B9900BDBA18 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8420A85C21E1868C00BDBA18 /* mule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8420A86B21E1868F00BDBA18 /* Build configuration list for PBXNativeTarget "mule" */;
+			buildPhases = (
+				8420A85921E1868C00BDBA18 /* Sources */,
+				8420A85A21E1868C00BDBA18 /* Frameworks */,
+				8420A85B21E1868C00BDBA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mule;
+			productName = mule;
+			productReference = 8420A85D21E1868C00BDBA18 /* mule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8420A85521E1868C00BDBA18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = IHIHI;
+				TargetAttributes = {
+					8420A85C21E1868C00BDBA18 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8420A85821E1868C00BDBA18 /* Build configuration list for PBXProject "mule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8420A85421E1868C00BDBA18;
+			productRefGroup = 8420A85E21E1868C00BDBA18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8420A85C21E1868C00BDBA18 /* mule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8420A85B21E1868C00BDBA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8420A86321E1868F00BDBA18 /* Assets.xcassets in Resources */,
+				8420A86621E1868F00BDBA18 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8420A85921E1868C00BDBA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8420A86F21E186E400BDBA18 /* Editor.swift in Sources */,
+				8420A86121E1868C00BDBA18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8420A86421E1868F00BDBA18 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8420A86521E1868F00BDBA18 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8420A86921E1868F00BDBA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8420A86A21E1868F00BDBA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8420A86C21E1868F00BDBA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3F94936UV5;
+				INFOPLIST_FILE = mule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.mule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8420A86D21E1868F00BDBA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3F94936UV5;
+				INFOPLIST_FILE = mule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.mule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8420A85821E1868C00BDBA18 /* Build configuration list for PBXProject "mule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8420A86921E1868F00BDBA18 /* Debug */,
+				8420A86A21E1868F00BDBA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8420A86B21E1868F00BDBA18 /* Build configuration list for PBXNativeTarget "mule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8420A86C21E1868F00BDBA18 /* Debug */,
+				8420A86D21E1868F00BDBA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8420A85521E1868C00BDBA18 /* Project object */;
+}
