@@ -14,9 +14,9 @@ And hopefully that’ll be a close enough match.
 
 Here's MULE running with one of the sample .usdz files from Apple's USDPython bundle:
 
-![mule_window](https://github.com/simpassi/mule/images/mule_window.png)
+![mule_window](https://github.com/simpassi/mule/blob/master/images/mule_window.png)
 
 SceneKit debug gives a lot of access to the internals (after conversion):
 
-![scenekit_debug](https://github.com/simpassi/mule/images/scenekit_debug.png)
+![scenekit_debug](https://github.com/simpassi/mule/blob/master/images/scenekit_debug.png)
 
