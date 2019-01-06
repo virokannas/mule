@@ -6,6 +6,17 @@ Currently there is only very limited functionality: you can open usd files for p
 
 # Editing
 
-Since scenekit takes ownership of the data and cannot work with other than flattened files, the plan for editing is that while scenekit can provide the preview and editing (transformations / flags / materials), the same edits are performed simultaneously through the USD Python API into the scene files themselves, in sync. 
+Since scenekit takes ownership of the data and cannot work with other than flattened files, the plan for editing is that while scenekit can provide the preview and editing (transformations / flags / materials), the same edits are performed simultaneously through the USD C++ API into the scene files themselves, in sync. 
 
-And hopefully that’ll be a close enough match. 
+And hopefully that’ll be a close enough match.
+
+# Samples
+
+Here's MULE running with one of the sample .usdz files from Apple's USDPython bundle:
+
+![mule_window](https://github.com/simpassi/mule/images/mule_window.png)
+
+SceneKit debug gives a lot of access to the internals (after conversion):
+
+![scenekit_debug](https://github.com/simpassi/mule/images/scenekit_debug.png)
+
