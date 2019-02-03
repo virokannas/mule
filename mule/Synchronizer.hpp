@@ -10,11 +10,10 @@
 #define Synchronizer_hpp
 
 #include <stdio.h>
-#include <pxr/pxr.h>
 
 extern "C" {
     void printUSDVersion();
-    
+    bool loadUSD(const char *path);
 };
 
 #endif /* Synchronizer_hpp */

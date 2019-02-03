@@ -65,6 +65,8 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
             for obj in scene.rootNode.childNodes {
                 setSubdivision(obj, 0)
             }
+            loadUSD(url.path)
+            
             sceneview.scene = scene
             let cameras = (scene.rootNode.childNodes(passingTest: { (node, value) -> Bool in
                 if node.camera != nil {
@@ -72,6 +74,7 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
                 }
                 return false
             }))
+            // load the scene in c++
             outline.reloadData()
         } catch {
             
