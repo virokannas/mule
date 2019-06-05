@@ -16,6 +16,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="mule" customModuleProvider="target">
             <connections>
+                <outlet property="editor" destination="5cS-oA-C90" id="GSI-6V-qnr"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
