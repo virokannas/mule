@@ -2,7 +2,10 @@
 
 MULE (Minimal USD Layout Editor) aims to be a simple USD editor that allows modification and compilation of USD scenes on MacOS through SceneKit.
 
-Currently there is only very limited functionality: you can open usd files for preview in SceneKitView and show/hide nodes.
+Currently there is only very limited functionality:
+* you can open usd files for preview in SceneKitView
+* you can show/hide nodes
+* you can save out a flattened USD file
 
 # Editing
 
@@ -20,3 +23,8 @@ SceneKit debug gives a lot of access to the internals (after conversion):
 
 ![scenekit_debug](https://github.com/simpassi/mule/blob/master/images/scenekit_debug.png)
 
+# Next steps
+
+* Saving overrides as a separate layer
+* Bringing in multiple USD files at different prim paths and saving out a layout file
+* Basic transformation handling
