@@ -13,38 +13,11 @@
 		8420A86F21E186E400BDBA18 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420A86E21E186E400BDBA18 /* Editor.swift */; };
 		8420A87221E18B9900BDBA18 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420A87121E18B9900BDBA18 /* SceneKit.framework */; };
 		8420A87421E18BA200BDBA18 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420A87321E18BA200BDBA18 /* ModelIO.framework */; };
-		84BBE4DE21E27AED0031BBD2 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D321E27AED0031BBD2 /* libboost_system.dylib */; };
-		84BBE4DF21E27AED0031BBD2 /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D421E27AED0031BBD2 /* libboost_thread.dylib */; };
-		84BBE4E021E27AED0031BBD2 /* libboost_atomic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */; };
-		84BBE4E121E27AED0031BBD2 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D621E27AED0031BBD2 /* libboost_program_options.dylib */; };
-		84BBE4E221E27AED0031BBD2 /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D721E27AED0031BBD2 /* libboost_filesystem.dylib */; };
 		84BBE4E321E27AED0031BBD2 /* libusd_ms.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D821E27AED0031BBD2 /* libusd_ms.dylib */; };
-		84BBE4E421E27AED0031BBD2 /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D921E27AED0031BBD2 /* libboost_date_time.dylib */; };
-		84BBE4E521E27AED0031BBD2 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DA21E27AED0031BBD2 /* libz.a */; };
-		84BBE4E621E27AED0031BBD2 /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DB21E27AED0031BBD2 /* libboost_regex.dylib */; };
-		84BBE4E721E27AED0031BBD2 /* libtbb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DC21E27AED0031BBD2 /* libtbb.a */; };
-		84BBE4E821E27AED0031BBD2 /* libtbbmalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DD21E27AED0031BBD2 /* libtbbmalloc.a */; };
 		84BBE4EC21E27B350031BBD2 /* Synchronizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE4EA21E27B350031BBD2 /* Synchronizer.cpp */; };
-		84BBE4EE21E27C7F0031BBD2 /* libboost_atomic.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		84BBE4EF21E27C7F0031BBD2 /* libboost_date_time.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D921E27AED0031BBD2 /* libboost_date_time.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		84BBE4F021E27C7F0031BBD2 /* libboost_filesystem.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D721E27AED0031BBD2 /* libboost_filesystem.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		84BBE4F121E27C7F0031BBD2 /* libboost_program_options.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D621E27AED0031BBD2 /* libboost_program_options.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		84BBE4F221E27C7F0031BBD2 /* libboost_regex.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4DB21E27AED0031BBD2 /* libboost_regex.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		84BBE4F321E27C7F0031BBD2 /* libboost_system.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D321E27AED0031BBD2 /* libboost_system.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		84BBE4F421E27C7F0031BBD2 /* libboost_thread.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D421E27AED0031BBD2 /* libboost_thread.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		84BBE4F721E27C7F0031BBD2 /* libusd_ms.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = 84BBE4D821E27AED0031BBD2 /* libusd_ms.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		84C92A5F22A73C620046D4E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C92A5E22A73C620046D4E3 /* main.cpp */; };
-		84C92A6322A73C670046D4E3 /* libboost_atomic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */; };
-		84C92A6422A73C670046D4E3 /* libboost_date_time.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D921E27AED0031BBD2 /* libboost_date_time.dylib */; };
-		84C92A6522A73C670046D4E3 /* libboost_filesystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D721E27AED0031BBD2 /* libboost_filesystem.dylib */; };
-		84C92A6622A73C670046D4E3 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D621E27AED0031BBD2 /* libboost_program_options.dylib */; };
-		84C92A6722A73C670046D4E3 /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DB21E27AED0031BBD2 /* libboost_regex.dylib */; };
-		84C92A6822A73C670046D4E3 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D321E27AED0031BBD2 /* libboost_system.dylib */; };
-		84C92A6922A73C670046D4E3 /* libboost_thread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D421E27AED0031BBD2 /* libboost_thread.dylib */; };
-		84C92A6A22A73C670046D4E3 /* libtbb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DC21E27AED0031BBD2 /* libtbb.a */; };
-		84C92A6B22A73C670046D4E3 /* libtbbmalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DD21E27AED0031BBD2 /* libtbbmalloc.a */; };
 		84C92A6C22A73C670046D4E3 /* libusd_ms.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D821E27AED0031BBD2 /* libusd_ms.dylib */; };
-		84C92A6D22A73C670046D4E3 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4DA21E27AED0031BBD2 /* libz.a */; };
 		84C92A6E22A73C6E0046D4E3 /* Synchronizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE4EA21E27B350031BBD2 /* Synchronizer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -55,13 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				84BBE4EE21E27C7F0031BBD2 /* libboost_atomic.dylib in Copy Files */,
-				84BBE4EF21E27C7F0031BBD2 /* libboost_date_time.dylib in Copy Files */,
-				84BBE4F021E27C7F0031BBD2 /* libboost_filesystem.dylib in Copy Files */,
-				84BBE4F121E27C7F0031BBD2 /* libboost_program_options.dylib in Copy Files */,
-				84BBE4F221E27C7F0031BBD2 /* libboost_regex.dylib in Copy Files */,
-				84BBE4F321E27C7F0031BBD2 /* libboost_system.dylib in Copy Files */,
-				84BBE4F421E27C7F0031BBD2 /* libboost_thread.dylib in Copy Files */,
 				84BBE4F721E27C7F0031BBD2 /* libusd_ms.dylib in Copy Files */,
 			);
 			name = "Copy Files";
@@ -88,17 +54,7 @@
 		8420A86E21E186E400BDBA18 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
 		8420A87121E18B9900BDBA18 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		8420A87321E18BA200BDBA18 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
-		84BBE4D321E27AED0031BBD2 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = USDMonolithic/lib/libboost_system.dylib; sourceTree = "<group>"; };
-		84BBE4D421E27AED0031BBD2 /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_thread.dylib; path = USDMonolithic/lib/libboost_thread.dylib; sourceTree = "<group>"; };
-		84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_atomic.dylib; path = USDMonolithic/lib/libboost_atomic.dylib; sourceTree = "<group>"; };
-		84BBE4D621E27AED0031BBD2 /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = USDMonolithic/lib/libboost_program_options.dylib; sourceTree = "<group>"; };
-		84BBE4D721E27AED0031BBD2 /* libboost_filesystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_filesystem.dylib; path = USDMonolithic/lib/libboost_filesystem.dylib; sourceTree = "<group>"; };
 		84BBE4D821E27AED0031BBD2 /* libusd_ms.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libusd_ms.dylib; path = USDMonolithic/lib/libusd_ms.dylib; sourceTree = "<group>"; };
-		84BBE4D921E27AED0031BBD2 /* libboost_date_time.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_date_time.dylib; path = USDMonolithic/lib/libboost_date_time.dylib; sourceTree = "<group>"; };
-		84BBE4DA21E27AED0031BBD2 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = USDMonolithic/lib/libz.a; sourceTree = "<group>"; };
-		84BBE4DB21E27AED0031BBD2 /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_regex.dylib; path = USDMonolithic/lib/libboost_regex.dylib; sourceTree = "<group>"; };
-		84BBE4DC21E27AED0031BBD2 /* libtbb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtbb.a; path = USDMonolithic/lib/libtbb.a; sourceTree = "<group>"; };
-		84BBE4DD21E27AED0031BBD2 /* libtbbmalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtbbmalloc.a; path = USDMonolithic/lib/libtbbmalloc.a; sourceTree = "<group>"; };
 		84BBE4E921E27B340031BBD2 /* mule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mule-Bridging-Header.h"; sourceTree = "<group>"; };
 		84BBE4EA21E27B350031BBD2 /* Synchronizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Synchronizer.cpp; sourceTree = "<group>"; };
 		84BBE4EB21E27B350031BBD2 /* Synchronizer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Synchronizer.hpp; sourceTree = "<group>"; };
@@ -111,17 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BBE4DE21E27AED0031BBD2 /* libboost_system.dylib in Frameworks */,
-				84BBE4DF21E27AED0031BBD2 /* libboost_thread.dylib in Frameworks */,
-				84BBE4E021E27AED0031BBD2 /* libboost_atomic.dylib in Frameworks */,
-				84BBE4E121E27AED0031BBD2 /* libboost_program_options.dylib in Frameworks */,
-				84BBE4E221E27AED0031BBD2 /* libboost_filesystem.dylib in Frameworks */,
 				84BBE4E321E27AED0031BBD2 /* libusd_ms.dylib in Frameworks */,
-				84BBE4E421E27AED0031BBD2 /* libboost_date_time.dylib in Frameworks */,
-				84BBE4E521E27AED0031BBD2 /* libz.a in Frameworks */,
-				84BBE4E621E27AED0031BBD2 /* libboost_regex.dylib in Frameworks */,
-				84BBE4E721E27AED0031BBD2 /* libtbb.a in Frameworks */,
-				84BBE4E821E27AED0031BBD2 /* libtbbmalloc.a in Frameworks */,
 				8420A87421E18BA200BDBA18 /* ModelIO.framework in Frameworks */,
 				8420A87221E18B9900BDBA18 /* SceneKit.framework in Frameworks */,
 			);
@@ -131,16 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C92A6B22A73C670046D4E3 /* libtbbmalloc.a in Frameworks */,
-				84C92A6D22A73C670046D4E3 /* libz.a in Frameworks */,
-				84C92A6622A73C670046D4E3 /* libboost_program_options.dylib in Frameworks */,
-				84C92A6522A73C670046D4E3 /* libboost_filesystem.dylib in Frameworks */,
-				84C92A6322A73C670046D4E3 /* libboost_atomic.dylib in Frameworks */,
-				84C92A6422A73C670046D4E3 /* libboost_date_time.dylib in Frameworks */,
-				84C92A6722A73C670046D4E3 /* libboost_regex.dylib in Frameworks */,
-				84C92A6922A73C670046D4E3 /* libboost_thread.dylib in Frameworks */,
-				84C92A6A22A73C670046D4E3 /* libtbb.a in Frameworks */,
-				84C92A6822A73C670046D4E3 /* libboost_system.dylib in Frameworks */,
 				84C92A6C22A73C670046D4E3 /* libusd_ms.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,17 +122,7 @@
 		8420A87021E18B9900BDBA18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */,
-				84BBE4D921E27AED0031BBD2 /* libboost_date_time.dylib */,
-				84BBE4D721E27AED0031BBD2 /* libboost_filesystem.dylib */,
-				84BBE4D621E27AED0031BBD2 /* libboost_program_options.dylib */,
-				84BBE4DB21E27AED0031BBD2 /* libboost_regex.dylib */,
-				84BBE4D321E27AED0031BBD2 /* libboost_system.dylib */,
-				84BBE4D421E27AED0031BBD2 /* libboost_thread.dylib */,
-				84BBE4DC21E27AED0031BBD2 /* libtbb.a */,
-				84BBE4DD21E27AED0031BBD2 /* libtbbmalloc.a */,
 				84BBE4D821E27AED0031BBD2 /* libusd_ms.dylib */,
-				84BBE4DA21E27AED0031BBD2 /* libz.a */,
 				8420A87321E18BA200BDBA18 /* ModelIO.framework */,
 				8420A87121E18B9900BDBA18 /* SceneKit.framework */,
 			);
@@ -322,7 +248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "for DYLIB in libboost_atomic libboost_date_time libboost_filesystem libboost_program_options libboost_regex libboost_system libboost_thread libusd_ms; do\n  install_name_tool -change \"@executable_path/$DYLIB.dylib\" \"@loader_path/../Resources/$DYLIB.dylib\" \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\n  install_name_tool -add_rpath \"@loader_path/../Resources\" \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/Resources/$DYLIB\"\ndone\ninstall_name_tool -add_rpath \"@loader_path/../Resources\" \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\n\ncp -r USDMonolithic/lib/usd $TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/Resources/\n";
+			shellScript = "for DYLIB in libusd_ms; do\n  install_name_tool -change \"@executable_path/$DYLIB.dylib\" \"@loader_path/../Resources/$DYLIB.dylib\" \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\" >/dev/null 2>/dev/null\n  install_name_tool -add_rpath \"@loader_path/../Resources\" \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/Resources/$DYLIB.dylib\" >/dev/null 2>/dev/null\ndone\n\ninstall_name_tool -add_rpath \"@loader_path/../Resources\" \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\" >/dev/null 2>/dev/null\n\ncp -r USDMonolithic/lib/usd $TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/Resources/\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
