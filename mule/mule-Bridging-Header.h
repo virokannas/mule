@@ -4,5 +4,5 @@
 
 #include <stdbool.h>
 
-void printUSDVersion();
-bool loadUSD(const char *path);
+#define BRIDGING_HEADER
+#include "Synchronizer.hpp"

@@ -20,9 +20,9 @@ pxr::SdfLayerRefPtr g_current_layer;
 
 bool loadUSD(const char *path) {
     pxr::UsdStageRefPtr stage = pxr::UsdStage::Open(path);
-    pxr::SdfLayerRefPtr layer = pxr::SdfLayer::Find(path);
     if(stage != NULL) {
         g_stage = stage;
+        pxr::SdfLayerRefPtr layer = pxr::SdfLayer::Find(path);
         if(layer != NULL) {
             g_current_layer = layer;
         } else {
@@ -36,3 +36,25 @@ bool loadUSD(const char *path) {
     return g_stage != NULL;
 }
 
+bool saveStageToFile(const char *path) {
+    g_stage->Flatten()->Export(path);
+    return true;
+}
+
+bool saveOverridesToFile(const char *path) {
+    g_stage->GetRootLayer()->Export(path);
+    return true;
+}
+
+bool changeBoolParam(const char *path, const char *param, bool value) {
+    pxr::SdfPath sdf_path(path);
+    pxr::UsdPrim prim = g_stage->GetPrimAtPath(sdf_path);
+    if(strcmp(param, "hidden") == 0) {
+        prim.SetHidden(value);
+    }
+    return false;
+}
+
+bool changeStringParam(const char *path, const char *param, const char *value) {
+    return false;
+}

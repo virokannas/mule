@@ -32,6 +32,17 @@ func toQuaternion( _ roll : Float, _ pitch: Float, _ yaw : Float) -> SCNQuaterni
         )
 }
 
+func fullNodePath(node: SCNNode) -> String {
+    var ret = ""
+    if (node.name != nil) {
+        ret = node.name!
+    }
+    if(node.parent != nil) {
+        return fullNodePath(node: node.parent!) + "/" + ret
+    }
+    return ret
+}
+
 class EditorController : NSViewController, NSOutlineViewDataSource {
     @IBOutlet var sceneview : SCNView!
     @IBOutlet var outline : NSOutlineView!
@@ -68,6 +79,7 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
             loadUSD(url.path)
             
             sceneview.scene = scene
+            
             let cameras = (scene.rootNode.childNodes(passingTest: { (node, value) -> Bool in
                 if node.camera != nil {
                     return true
@@ -89,8 +101,17 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
         dlg.runModal()
         if let chosenfile = dlg.url {
             loadUSDFromURL(chosenfile)
+            NSDocumentController.shared.noteNewRecentDocumentURL(chosenfile)
         }
-
+    }
+    
+    @IBAction func saveStage ( sender: Any ) {
+        let dlg = NSSavePanel()
+        dlg.allowedFileTypes = ["usd","usda"]
+        dlg.runModal()
+        if let chosenfile = dlg.url {
+            saveStageToFile(chosenfile.path)
+        }
     }
     
     func outlineView(_ outlineView: NSOutlineView, objectValueFor tableColumn: NSTableColumn?, byItem item: Any?) -> Any? {
@@ -109,8 +130,10 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
     
     func outlineView(_ outlineView: NSOutlineView, setObjectValue object: Any?, for tableColumn: NSTableColumn?, byItem item: Any?) {
         var node = (item as! SCNNode)
+        let full_path = fullNodePath(node: node)
         if tableColumn!.identifier.rawValue == "vis" {
             node.isHidden = !(object as! Bool)
+            changeBoolParam(full_path, "hidden", false)
         }
     }
     
