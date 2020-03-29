@@ -8,8 +8,9 @@
 
 #include "Synchronizer.hpp"
 #include <pxr/pxr.h>
-#include <pxr/usd/sdf/layer.h>
+#include <pxr/usd/usd/prim.h>
 #include <pxr/usd/usd/stage.h>
+#include <pxr/usd/sdf/layer.h>
 
 void printUSDVersion() {
     printf("USD Library version %d.%d.%d\n", PXR_MAJOR_VERSION, PXR_MINOR_VERSION, PXR_PATCH_VERSION);

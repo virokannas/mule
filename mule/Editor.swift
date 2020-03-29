@@ -15,6 +15,7 @@ func degreesToRadians(_ degrees: Float) -> Float {
     return degrees * .pi / 180
 }
 
+// https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles
 func toQuaternion( _ roll : Float, _ pitch: Float, _ yaw : Float) -> SCNQuaternion
 {
     let cy = cos(yaw * 0.5);
@@ -29,7 +30,7 @@ func toQuaternion( _ roll : Float, _ pitch: Float, _ yaw : Float) -> SCNQuaterni
         y: CGFloat(sy * cp * sr + cy * sp * cr),
         z: CGFloat(sy * cp * cr - cy * sp * sr),
         w: CGFloat(cy * cp * cr + sy * sp * sr)
-        )
+    )
 }
 
 func fullNodePath(node: SCNNode) -> String {
