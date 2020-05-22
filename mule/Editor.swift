@@ -58,6 +58,10 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
             let url = URL(fileURLWithPath: filepath)
             loadUSDFromURL(url)
         }
+        
+        // add gesture controls
+        let tapGesture = NSClickGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     func setSubdivision(_ obj: SCNNode, _ level: Int) {
@@ -155,6 +159,15 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
             return 1
         } else {
             return (item as! SCNNode).childNodes.count
+        }
+    }
+    
+    @objc func handleTap(_ gesture: NSClickGestureRecognizer) {
+        let location = gesture.location(in: self.view)
+        let hits = sceneview.hitTest(location, options: [:])
+        let first_res = hits.first
+        if(first_res != nil) {
+            first_res!.node.hasControls = true
         }
     }
     
