@@ -7,6 +7,12 @@ Currently there is only very limited functionality:
 * you can show/hide nodes
 * you can save out a flattened USD file
 
+# Prerequisites
+
+* XCode 11 or newer
+* CMake installed (and in run path)
+* Monolithic USD build (can be done in-repo, just run the build_monolithic_usd.py script at repo root)
+
 # Editing
 
 Since scenekit takes ownership of the data and cannot work with other than flattened files, the plan for editing is that while scenekit can provide the preview and editing (transformations / flags / materials), the same edits are performed simultaneously through the USD C++ API into the scene files themselves, in sync. 
