@@ -48,6 +48,7 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
     @IBOutlet var sceneview : SCNView!
     @IBOutlet var outline : NSOutlineView!
     var mdl : MDLAsset?
+    var selected : SCNNode?
     
     override func awakeFromNib() {
         sceneview.showsStatistics = true
@@ -61,7 +62,7 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
         
         // add gesture controls
         let tapGesture = NSClickGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        self.view.addGestureRecognizer(tapGesture)
+        self.sceneview.addGestureRecognizer(tapGesture)
     }
     
     func setSubdivision(_ obj: SCNNode, _ level: Int) {
@@ -163,11 +164,17 @@ class EditorController : NSViewController, NSOutlineViewDataSource {
     }
     
     @objc func handleTap(_ gesture: NSClickGestureRecognizer) {
-        let location = gesture.location(in: self.view)
+        let location = gesture.location(in: self.sceneview)
         let hits = sceneview.hitTest(location, options: [:])
         let first_res = hits.first
+        if (selected != nil) {
+            selected!.hasControls = false
+        }
         if(first_res != nil) {
             first_res!.node.hasControls = true
+            selected = first_res!.node
+        } else {
+            selected = nil
         }
     }
     

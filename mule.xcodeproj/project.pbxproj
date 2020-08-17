@@ -13,6 +13,7 @@
 		8420A86F21E186E400BDBA18 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420A86E21E186E400BDBA18 /* Editor.swift */; };
 		8420A87221E18B9900BDBA18 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420A87121E18B9900BDBA18 /* SceneKit.framework */; };
 		8420A87421E18BA200BDBA18 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8420A87321E18BA200BDBA18 /* ModelIO.framework */; };
+		84437B3D24981A3A00495FFA /* NodeGizmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84437B3C24981A3A00495FFA /* NodeGizmo.swift */; };
 		84BBE4E021E27AED0031BBD2 /* libboost_atomic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */; };
 		84BBE4E121E27AED0031BBD2 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D621E27AED0031BBD2 /* libboost_program_options.dylib */; };
 		84BBE4E321E27AED0031BBD2 /* libusd_ms.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BBE4D821E27AED0031BBD2 /* libusd_ms.dylib */; };
@@ -53,6 +54,7 @@
 		8420A86E21E186E400BDBA18 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
 		8420A87121E18B9900BDBA18 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		8420A87321E18BA200BDBA18 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		84437B3C24981A3A00495FFA /* NodeGizmo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeGizmo.swift; sourceTree = "<group>"; };
 		84BBE4D321E27AED0031BBD2 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = USDMonolithic/lib/libboost_system.dylib; sourceTree = "<group>"; };
 		84BBE4D421E27AED0031BBD2 /* libboost_thread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_thread.dylib; path = USDMonolithic/lib/libboost_thread.dylib; sourceTree = "<group>"; };
 		84BBE4D521E27AED0031BBD2 /* libboost_atomic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_atomic.dylib; path = USDMonolithic/lib/libboost_atomic.dylib; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		8420A85F21E1868C00BDBA18 /* mule */ = {
 			isa = PBXGroup;
 			children = (
+				84437B3C24981A3A00495FFA /* NodeGizmo.swift */,
 				8420A86021E1868C00BDBA18 /* AppDelegate.swift */,
 				8420A86221E1868F00BDBA18 /* Assets.xcassets */,
 				8420A86421E1868F00BDBA18 /* MainMenu.xib */,
@@ -176,7 +179,7 @@
 				TargetAttributes = {
 					8420A85C21E1868C00BDBA18 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1130;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -231,7 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfor DYLIB in libboost_atomic libboost_date_time libboost_filesystem libboost_program_options libboost_regex libboost_system libboost_thread libusd_ms; do\n  install_name_tool -change @executable_path/$DYLIB.dylib @loader_path/../Frameworks/$DYLIB.dylib \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ndone\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfor DYLIB in libboost_atomic libboost_date_time libboost_filesystem libboost_program_options libboost_regex libboost_system libboost_thread libusd_ms; do\n  install_name_tool -change @executable_path/$DYLIB.dylib @loader_path/../Frameworks/$DYLIB.dylib \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\ndone\nrsync -a USDMonolithic/lib/usd \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/Frameworks/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -242,6 +245,7 @@
 			files = (
 				84BBE4EC21E27B350031BBD2 /* Synchronizer.cpp in Sources */,
 				8420A86F21E186E400BDBA18 /* Editor.swift in Sources */,
+				84437B3D24981A3A00495FFA /* NodeGizmo.swift in Sources */,
 				8420A86121E1868C00BDBA18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,12 +399,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/USDMonolithic/lib",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.mule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "mule/mule-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -422,11 +427,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/USDMonolithic/lib",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.mule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "mule/mule-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

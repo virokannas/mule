@@ -15,25 +15,27 @@ enum EditMode {
     case scale
 }
 
-class NodeGizmo {
-    var node : SCNNode?
+extension SCNVector3 {
+    var inverse : SCNVector3 {
+        return SCNVector3(1.0 / self.x, 1.0 / self.y, 1.0 / self.z)
+    }
+}
+
+class NodeGizmo : SCNNode {
     var controls : SCNNode? = nil
     static var mode : EditMode = .move
     
-    init(_ node : SCNNode) {
-        self.node = node
-        self.createControls()
-    }
-    
     func destroyControls() {
-        if (self.controls != nil) {
-            self.controls!.removeFromParentNode()
-        }
+        self.removeFromParentNode()
     }
     
-    func createControls() {
+    func createControls(_ node: SCNNode) {
+        self.name = "_gizmo"
         self.destroyControls()
         self.controls = SCNNode()
+        self.controls!.scale = node.scale.inverse
+        self.addChildNode(self.controls!)
+        node.addChildNode(self)
         if(NodeGizmo.mode == .move) {
             let x = SCNNode(geometry: SCNBox(width: 1.0, height: 0.1, length: 0.1, chamferRadius: 0.0))
             let y = SCNNode(geometry: SCNBox(width: 0.1, height: 1.0, length: 0.1, chamferRadius: 0.0))
@@ -48,30 +50,18 @@ class NodeGizmo {
 extension SCNNode {
     var hasControls : Bool {
         get {
-            let val = self.value(forKey: "hasGizmo")
-            if (val != nil) {
-                return val as! Bool
-            }
-            return false
+            let val = self.childNode(withName: "_gizmo", recursively: false)
+            return (val != nil)
         }
         set(controls) {
-            let val = self.value(forKey: "hasGizmo")
-            var has = false
-            if (val != nil) {
-                has = val as! Bool
-            }
+            let val = self.childNode(withName: "_gizmo", recursively: false)
             
-            if (has && !controls) {
-                let gizmo = self.value(forKey: "gizmo")
-                if(gizmo != nil) {
-                    (gizmo as! NodeGizmo).destroyControls()
-                    self.setValue(nil, forKey: "gizmo")
-                }
-            } else if (!has && controls) {
-                var _gizmo = NodeGizmo(self)
-                //self.setValue(_gizmo, forKey: "gizmo")
+            if (val != nil && !controls) {
+                (val as! NodeGizmo).destroyControls()
+            } else if (val == nil && controls) {
+                let gizmo = NodeGizmo()
+                gizmo.createControls(self)
             }
-            self.setValue(controls, forKey: "hasGizmo")
         }
     }
 }
